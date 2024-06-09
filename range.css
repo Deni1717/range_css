@@ -1,0 +1,37 @@
+.filtersHeader {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.filtersList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filterContainerRow {
+  min-width: 135px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.activeFilter {
+  background-color: rgba(221, 67, 67, 0.5);
+  border: 1px solid var(--ground_color);
+  cursor: default;
+}
+
+.filterDisabled {
+  background-color: var(--ground_color);
+  border: 1px solid var(--disable-color);
+  color: var(--disable-color) !important;
+}
+
+@media (min-width: 1024px) {
+  .filtersList {
+    flex-direction: column;
+  }
+}
